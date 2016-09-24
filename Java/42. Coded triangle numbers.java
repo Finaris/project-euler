@@ -12,7 +12,7 @@ public class Test
 	public static void main(String[] args) throws IOException
 	{
 	
-		Path path = Paths.get("C:\\Users\\Joey\\Desktop\\words.txt");
+		Path path = Paths.get("words.txt");
 		Charset cs= StandardCharsets.US_ASCII;
 		List<String> fileArray = Files.readAllLines(path, cs);
 		String words = fileArray.get(0);
