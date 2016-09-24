@@ -14,7 +14,7 @@ public class Test
 	public static void main(String[] args) throws IOException
 	{
 		
-		Path path = Paths.get("C:\\Users\\Joey\\Desktop\\chacha.txt");
+		Path path = Paths.get("chacha.txt");
 		Charset cs = StandardCharsets.US_ASCII;
 		fileArray = Files.readAllLines(path, cs);
 		for(int i = 0; i < 20; i++)
