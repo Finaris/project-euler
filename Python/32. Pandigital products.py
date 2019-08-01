@@ -22,7 +22,7 @@ def is_pandigital_product(n):
     :return: (bool) True if the number is pandigital and False otherwise.
     """
     # Figure out the numbers needed from the factors
-    remaining_digits = {i for i in range(1, 10)} - {int(digit) for digit in str(n)}
+    remaining_digits = {j for j in range(1, 10)} - {int(digit) for digit in str(n)}
 
     # There are only two possibilities: 1/4 digit factors or 2/3 digits.
     # Start with 1/4 digits.
