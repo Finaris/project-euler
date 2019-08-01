@@ -26,9 +26,9 @@ def is_pandigital_product(n):
 
     # There are only two possibilities: 1/4 digit factors or 2/3 digits.
     # Start with 1/4 digits.
-    for i in [i for i in range(1, 10)] + [i for i in range(10, 100)]:
-        if int(n/i) == n/i:
-            factor_one, factor_two = i, int(n/i)
+    for j in [j for j in range(1, 10)] + [j for j in range(10, 100)]:
+        if int(n/j) == n/j:
+            factor_one, factor_two = j, int(n/j)
             if remaining_digits == {int(digit) for digit in str(factor_one)} | {int(digit) for digit in str(factor_two)}:
                 return True
     return False
