@@ -15,7 +15,7 @@ so be sure to only include it once in your sum.
 """
 
 
-def is_pandigital_product(n):
+def is_pandigital_product(n: int) -> bool:
     """ Determines if n is a pandigital product.
 
     :param n: (int) The number of interest.
